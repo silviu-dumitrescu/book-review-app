@@ -33,4 +33,4 @@ https://github.com/silviu-dumitrescu/book-review-app
 ![database diagram](assets/db_diagram.png)
 
 
-![usecase diagram](assets/db_diagram.png)
+![usecase diagram](assets/usecase_diagram.png)
