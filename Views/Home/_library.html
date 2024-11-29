@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBookApp - Library</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">MyBookApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-books.html">My Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Library <span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> -->
+        <!-- Add links to other pages here -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">My Library</h2>
+    <div class="row">
+      <!-- Example book card -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1381935791i/18682641.jpg" class="card-img-top" alt="Book Cover">
+          <div class="card-body">
+            <h5 class="card-title">Running: The Autobiography</h5>
+            <p class="card-text">Ronnie O'Sullivan</p>
+            <a href="#" class="btn btn-danger btn-sm">Remove from Library</a>
+          </div>
+        </div>
+      </div>
+	<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+		<div class="card">
+		  <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327879079i/321552.jpg" class="card-img-top" alt="Book Cover">
+		  <div class="card-body">
+			<h5 class="card-title">The Agony and the Ecstasy</h5>
+			<p class="card-text">Irving Stone</p>
+			<a href="#" class="btn btn-danger btn-sm">Remove from Library</a>
+		  </div>
+		</div>
+	</div>
+      <!-- Repeat this card structure for each book in the library -->
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookApp - User Profile</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">BookApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="browse.html">Browse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wishlist.html">Wishlist</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="library.html">Library</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li> -->
+        <!-- Add links to other pages here -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.QBNgMKwHvrce9VcX1PP2zgHaI5?w=161&h=193&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="Profile Picture">
+          <div class="card-body">
+            <h5 class="card-title">Dumitrescu Silviu</h5>
+            <p class="card-text">book enthusiast</p>
+			<a href="login.html" class="btn btn-secondary btn-block">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 mb-4">
+        <h2 class="mb-3">User Profile</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Edit Profile</h5>
+            <!-- Profile form -->
+            <form>
+              <div class="form-group">
+                <label for="username">silviud92</label>
+                <input type="text" class="form-control" id="username" value="silviud92">
+              </div>
+              <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea class="form-control" id="bio" rows="3">book enthusiast</textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
