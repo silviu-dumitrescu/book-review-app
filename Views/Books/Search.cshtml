@@ -1,0 +1,23 @@
+﻿@model List<Book>
+
+<form method="get" action="@Url.Action("Search", "Books")" class="d-flex mb-3">
+	<input class="form-control mr-sm-2" type="search" id="searchString" name="searchString" aria-label="Search" placeholder="Search by title or author">
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<div class="row mt-5">
+	@foreach (var book in Model)
+	{
+		<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+			<a href="@Url.Action("Details", "Books", new { id = book.BookId })" class="card-link">
+				<div class="card">
+					<img src=@book.ImageUrl alt="Book Cover" class="card-img-top" style="object-fit: cover; height: 450px;">
+					<div class="card-body">
+						<h5 class="card-title">@book.Title</h5>
+						<p class="card-text">@book.Author.Name</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	}
+</div>
